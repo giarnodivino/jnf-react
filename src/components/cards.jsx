@@ -8,7 +8,7 @@ function MapCard({title, subtitle, src}) {
       </div>
 
       {/* Map */}
-      <div className="h-[300px] w-full">
+      <div className="h-75 w-full">
         <iframe
           src={src}
           className="h-full w-full"

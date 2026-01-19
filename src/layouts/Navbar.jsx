@@ -46,21 +46,21 @@ export default function Navbar() {
         <div className="mx-auto max-w-7xl px-4 pb-4 sm:px-6">
           <div className="rounded-xl border border-black/10 bg-white/90 p-2 shadow-sm backdrop-blur">
             <a
-              href="#"
+              href="#home"
               className="block rounded-lg px-3 py-2 font-medium text-gray-800 hover:bg-black/5"
               onClick={() => setOpen(false)}
             >
               Home
             </a>
             <a
-              href="#"
+              href="#aboutUs"
               className="block rounded-lg px-3 py-2 font-medium text-gray-700 hover:bg-black/5"
               onClick={() => setOpen(false)}
             >
               About
             </a>
             <a
-              href="#"
+              href="#contactus"
               className="mt-2 block rounded-lg bg-black px-3 py-2 text-center text-sm font-semibold text-white hover:bg-black/80"
               onClick={() => setOpen(false)}
             >
