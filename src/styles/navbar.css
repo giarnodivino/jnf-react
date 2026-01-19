@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.navbar {
+    background-color: #F6F1E8 !important;
+}
