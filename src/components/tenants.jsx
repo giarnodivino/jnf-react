@@ -6,7 +6,10 @@ import Prestige from "../assets/images/prestige.png";
 import Dentist from "../assets/images/delos.jpg";
 import Thinksafe from "../assets/images/thinksafe.jpg";
 import Beautystudio from "../assets/images/beautystudio.jpg";
-import Primemedia from  "../assets/images/primemedia.jpg";
+import Primemedia from "../assets/images/primemedia.jpg";
+import Mercury from "../assets/images/mercury.png";
+import Goldilocks from "../assets/images/goldilocks.jpg";
+import Consulting from "../assets/images/consulting.jpg";
 
 // Option A (recommended): put your logos in /src/assets/clients/
 // then import them like below.
@@ -19,11 +22,14 @@ const clients = [
   // For now, placeholders (replace with your real images):
   {name: "Jollibee", src: Jollibee},
   {name: "Shakeys", src: Shakeys},
+  {name: "Mercury Drug", src: Mercury},
+  {name: "Goldilocks", src: Goldilocks},
   {name: "Prestige", src: Prestige},
   {name: "Dentist", src: Dentist},
   {name: "Thinksafe", src: Thinksafe},
   {name: "Beauty Studio", src: Beautystudio},
   {name: "Prime Media", src: Primemedia},
+  {name: "Consulting", src: Consulting},
 ];
 
 export default function ClientsSection() {
@@ -34,24 +40,17 @@ export default function ClientsSection() {
         <div className="text-center">
           <h2 className="text-4xl font-extrabold tracking-wide text-neutral-900 md:text-5xl">OUR CLIENTS</h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm text-neutral-600 md:text-base">
-            Our partner establishments that have found success in our prime location.
+            Some of our partner establishments that have found success in our prime location.
           </p>
         </div>
 
         {/* Logos */}
-        <div className="mt-10">
-          <div className="grid grid-cols-2 items-center justify-items-center gap-x-10 gap-y-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-            {clients.map((c) => (
-              <div key={c.name} className="flex h-20 w-full items-center justify-center" title={c.name}>
-                <img
-                  src={c.src}
-                  alt={c.name}
-                  className="max-h-20 w-auto max-w-full object-contain opacity-90 md:grayscale-90 md:hover:grayscale-0 hover:opacity-100 transition"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
+        <div className="mt-10 grid grid-cols-2 items-center justify-items-center md:flex md:flex-wrap justify-center gap-x-16 gap-y-12">
+          {clients.map((c) => (
+            <div key={c.name} className="flex w-auto items-center justify-center">
+              <img src={c.src} alt={c.name} className="max-h-20 w-auto object-contain" />
+            </div>
+          ))}
         </div>
       </div>
     </section>
