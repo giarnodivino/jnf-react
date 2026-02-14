@@ -1,9 +1,10 @@
 import {useState} from "react";
 import "./styles/App.css";
 import Navbar from "./layouts/Navbar.jsx";
-import {Drone, Roof, Sunset, Location, Partner, Trust} from "./assets/images/allImages.jsx";
+import {Drone, Roof, Sunset, Location, Partner, Trust, Jollibee, Shakeys} from "./assets/images/allImages.jsx";
 import Contact from "./layouts/contact.jsx";
 import MapCard from "./components/cards.jsx";
+import ClientsSection from "./components/tenants.jsx";
 
 function App() {
   return (
@@ -64,6 +65,11 @@ function App() {
             <img src={Sunset} className="absolute top-100 left-4 w-4/5 md:w-3/5 rounded-xl shadow-md z-20" />
           </div>
         </div>
+      </section>
+
+      {/* OUR CLIENTS SECTION */}
+      <section>
+        <ClientsSection />
       </section>
 
       {/* WHY CHOOSE US SECTION */}
