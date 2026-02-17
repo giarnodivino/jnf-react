@@ -23,7 +23,7 @@ function App() {
           </h1>
           <h2 className="text-lg max-w-3xl mx-auto font-medium font-sans desc1 p-4 m-2 md:text-2xl">
             J&F Divino Corporation offers 3786 square meters of commercial space for lease in a prime location in Cubao,
-            Quezon City.
+            Quezon City
           </h2>
           <div className="flex justify-center mt-6 pt-6">
             <a href="#aboutUs" className="button1 text-lg font-bold md:text-2xl">
@@ -48,13 +48,13 @@ function App() {
               J&F Divino Development Corporation is a family-owned company, proudly founded by our grandparents, Jacobo
               "Oboy" Divino Sr. and Felicidad "Idad" Divino.
             </p>
-            <p className="hidden md:block md:px-8 md:pb-8 md:font-light md:font-sans md:text-xl lg:text-2xl">
+            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl lg:text-2xl">
               What started as a humble two-storey residence with a bakery on the ground floor gradually evolved into a
               row of apartment units at the rear of the property.
             </p>
             <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl lg:text-2xl">
-              Over the years, it was further developed into commercial establishments along Aurora Boulevard, Cubao,
-              Quezon City.
+              Over the years, it was further developed into commercial establishments along Aurora Boulevard in Cubao,
+              Quezon City
             </p>
           </div>
 
@@ -81,17 +81,17 @@ function App() {
           WHY CHOOSE US
         </h1>
         <div className="md:flex">
-          <div className=" m-6 h-75 md:h-96 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
+          <div className=" m-6 h-75 md:h-100 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
             <div className="flex justify-center mb-6 text-indigo-900">
               <img src={Trust} className="w-15 lg:w-30" alt="" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4 lg:text-5xl">Trust</h3>
             <p className="text-gray-600 leading-relaxed md:text-xl lg:text-2xl">
-              <strong>Reliable partner</strong> for businesses seeking accessible and secure commercial locations in
-              Metro Manila.
+              <strong>Reliable partner</strong> for businesses seeking accessible and secure commercial locations in{" "}
+              <span className="whitespace-nowrap">Metro Manila</span>
             </p>
           </div>
-          <div className=" m-6 h-75 md:h-96 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
+          <div className=" m-6 h-75 md:h-100 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
             <div className="flex justify-center mb-6 text-indigo-900">
               <img src={Location} className="w-15 lg:w-20" alt="" />
             </div>
@@ -100,14 +100,18 @@ function App() {
               We ensure your business is <strong>seen, visited, and remembered.</strong>
             </p>
           </div>
-          <div className=" m-6 h-75 md:h-96 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
+          <div className=" m-6 h-75 md:h-100 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
             <div className="flex justify-center mb-6 text-indigo-900">
               <img src={Partner} className="w-13 lg:w-20" alt="" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4 lg:text-5xl">Partnerships</h3>
             <p className="text-gray-600 leading-relaxed md:text-xl lg:text-2xl">
-              We take pride in building <strong>long-term relationships</strong> based on integrity, transparency, and
-              mutual success.
+              We take pride in building{" "}
+              <span className="whitespace-nowrap">
+                <strong>long-term relationships</strong>
+              </span>
+              <br />
+              based on integrity, transparency, and mutual success.
             </p>
           </div>
         </div>
