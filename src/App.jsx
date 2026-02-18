@@ -88,6 +88,7 @@ function App() {
             <h3 className="text-2xl font-bold text-gray-900 mb-4 lg:text-5xl">Trust</h3>
             <p className="text-gray-600 leading-relaxed md:text-xl lg:text-2xl">
               <strong>Reliable partner</strong> for businesses seeking accessible and secure commercial locations in{" "}
+              <br />
               <span className="whitespace-nowrap">Metro Manila</span>
             </p>
           </div>
