@@ -49,7 +49,7 @@ function App() {
               "Oboy" Divino Sr. and Felicidad "Idad" Divino.
             </p>
             <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl lg:text-2xl">
-              What started as a humble two-storey residence with a bakery on the ground floor gradually evolved into a
+              What started as a humble two-story residence with a bakery on the ground floor gradually evolved into a
               row of apartment units at the rear of the property.
             </p>
             <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl lg:text-2xl">
