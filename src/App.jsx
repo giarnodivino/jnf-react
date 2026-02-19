@@ -128,7 +128,7 @@ function App() {
 
       {/* CONTACT US SECTION */}
       <section className="relative mx-auto mb-10" id="contactus">
-        <div className="lg:grid lg:grid-cols-2 items-center">
+        <div className="lg:grid lg:grid-cols-2 items-center mt-15">
           <div className="col-span-1 ">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
