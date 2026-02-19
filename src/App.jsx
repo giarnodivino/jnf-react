@@ -45,8 +45,8 @@ function App() {
             <h1 className="pt-4 px-8 text-4xl font-extrabold font-sans md:text-5xl lg:text-6xl">ABOUT US</h1>
 
             <p className="p-8 text-lg font-light font-sans md:text-xl">
-              J&F Divino Development Corporation is a family-owned company founded by our grandparents, Jacobo "Oboy"
-              Divino Sr. and Felicidad "Idad" Divino.
+              J&F Divino Development Corporation is a family-owned company founded by Jacobo "Oboy" Divino Sr. and
+              Felicidad "Idad" Divino.
             </p>
 
             <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl">
