@@ -1,12 +1,14 @@
 import {useState} from "react";
-import "./styles/App.css";
-import Navbar from "./layouts/Navbar.jsx";
-import {Drone, Roof, Sunset, Location, Partner, Trust, Jollibee, Shakeys} from "./assets/images/allImages.jsx";
-import Contact from "./layouts/contact.jsx";
-import MapCard from "./components/cards.jsx";
-import ClientsSection from "./components/tenants.jsx";
+import "../styles/App.css";
+import Navbar from "../layouts/Navbar.jsx";
+import {Drone, Roof, Sunset, Location, Partner, Trust, Jollibee, Shakeys} from "../assets/images/allImages.jsx";
+import Contact from "../layouts/contact.jsx";
+import MapCard from "../components/cards.jsx";
+import ClientsSection from "../components/tenants.jsx";
 
-function App() {
+import {Link} from "react-router-dom";
+
+export default function Home() {
   return (
     <>
       <Navbar />
@@ -29,9 +31,9 @@ function App() {
             <a href="#aboutUs" className="button1 text-lg font-bold md:text-2xl">
               About
             </a>
-            <a href="#contactus" className="button1 text-lg font-bold md:text-2xl">
+            <Link to="/#contactus" className="button1 text-lg font-bold md:text-2xl">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -42,27 +44,28 @@ function App() {
         <div className="mx-auto max-w-7xl md:grid md:grid-cols-10 md:gap-8 mt-8">
           {/* ABOUT US */}
           <div className="md:col-span-4">
-            <h1 className="pt-4 px-8 text-4xl font-extrabold font-sans md:text-5xl lg:text-6xl">ABOUT US</h1>
+            <h1 className="pt-4 px-8 text-4xl font-extrabold font-sans md:text-5xl lg:text-7xl">ABOUT US</h1>
 
-            <p className="p-8 text-lg font-light font-sans md:text-xl">
-              J&F Divino Development Corporation is a family-owned company founded by our grandparents, Jacobo "Oboy"
-              Divino Sr. and Felicidad "Idad" Divino.
+            <p className="p-8 text-lg font-light font-sans md:text-xl lg:text-2xl">
+              J&F Divino Development Corporation is a family-owned company, proudly founded by our grandparents, Jacobo
+              "Oboy" Divino Sr. and Felicidad "Idad" Divino.
             </p>
-
-            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl">
-              What began as a two-story residence with a small bakery gradually evolved into apartment units at the rear
-              of the property.
+            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl lg:text-2xl">
+              What started as a humble two-story residence with a bakery on the ground floor gradually evolved into a
+              row of apartment units at the rear of the property.
             </p>
-
-            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl">
-              Over the decades, the company helped shape Cubao through well-planned mid-sized residential buildings in
-              accessible, strategic locations.
+            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl lg:text-2xl">
+              Over the years, it was further developed into commercial establishments along Aurora Boulevard in Cubao,
+              Quezon City
             </p>
-
-            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl">
-              Today, it owns and manages two commercial buildings along Aurora Boulevard, near Anonas MRT-3 and the
-              future Metro Manila Subway, serving retail, dining, clinics, and BPO tenants.
-            </p>
+            <div className="px-8 pb-8">
+              <Link
+                to="/about"
+                className="inline-flex items-center justify-center rounded-md bg-blue-700 px-6 py-3 text-white font-semibold hover:bg-blue-800"
+              >
+                Read more
+              </Link>
+            </div>
           </div>
 
           {/* COLLAGE */}
@@ -116,7 +119,7 @@ function App() {
               <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center">
                 <img src={Partner} className="h-14 w-14 object-contain" alt="Partnerships" />
               </div>
-              <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900`">Partnerships</h3>
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Partnerships</h3>
               <p className="mx-auto mt-4 max-w-[28ch] text-base sm:text-lg text-gray-600 leading-relaxed">
                 We take pride in building <strong className="whitespace-nowrap">long-term relationships</strong> <br />
                 based on integrity, transparency, and mutual success.
@@ -151,5 +154,3 @@ function App() {
     </>
   );
 }
-
-export default App;
