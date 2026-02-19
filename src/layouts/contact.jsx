@@ -13,10 +13,7 @@ export default function Contact() {
           className="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-indigo-500 to-teal-200 opacity-30 sm:left-[calc(50%-40rem)] sm:w-288.75"
         />
       </div>
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Inquire Now</h2>
-        <p className="mt-2 text-lg/8 text-gray-600">We provide spaces for you to grow your business</p>
-      </div>
+      
 
       <form
         action="https://formsubmit.co/c67ce7757c03cf0bd42019a8cdd86e5a"

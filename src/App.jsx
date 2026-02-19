@@ -129,10 +129,13 @@ function App() {
       {/* CONTACT US SECTION */}
       <section className="relative mx-auto mb-10" id="contactus">
         <div className="lg:grid lg:grid-cols-2 items-center">
-          <div className="col-span-1">
-            <Contact />
-          </div>
           <div className="col-span-1 ">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
+                Inquire Now
+              </h2>
+              <p className="mt-2 text-lg/8 text-gray-600">We provide spaces for you to grow your business</p>
+            </div>
             {/* contact info cards */}
             <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 text-center shadow-sm m-10">
               <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Contact Information</h3>
@@ -144,6 +147,9 @@ function App() {
                 <strong>Email:</strong> info@jnfdivino.com
               </p>
             </div>
+          </div>
+          <div className="col-span-1">
+            <Contact />
           </div>
         </div>
       </section>
