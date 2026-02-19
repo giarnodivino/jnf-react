@@ -80,40 +80,41 @@ function App() {
         <h1 className="text-4xl font-extrabold text-center p-10 font-sans from-gray-200 to-white bg-linear-to-b md:text-5xl">
           WHY CHOOSE US
         </h1>
-        <div className="md:flex">
-          <div className=" m-6 h-75 md:h-100 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
-            <div className="flex justify-center mb-6 text-indigo-900">
-              <img src={Trust} className="w-15 lg:w-30" alt="" />
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 md:grid-cols-3">
+            {/* Card */}
+            <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 text-center shadow-sm">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center">
+                <img src={Trust} className="h-14 w-14 object-contain" alt="Trust" />
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Trust</h3>
+              <p className="mx-auto mt-4 max-w-[28ch] text-base sm:text-lg text-gray-600 leading-relaxed">
+                <strong>Reliable partner</strong> for businesses seeking accessible and secure commercial locations in
+                <br />
+                <span className="whitespace-nowrap">Metro Manila</span>
+              </p>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 lg:text-5xl">Trust</h3>
-            <p className="text-gray-600 leading-relaxed md:text-xl lg:text-2xl">
-              <strong>Reliable partner</strong> for businesses seeking accessible and secure commercial locations in{" "}
-              <br />
-              <span className="whitespace-nowrap">Metro Manila</span>
-            </p>
-          </div>
-          <div className=" m-6 h-75 md:h-100 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
-            <div className="flex justify-center mb-6 text-indigo-900">
-              <img src={Location} className="w-15 lg:w-20" alt="" />
+
+            <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 text-center shadow-sm">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center">
+                <img src={Location} className="h-14 w-14 object-contain" alt="Prime Location" />
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Prime Location</h3>
+              <p className="mx-auto mt-4 max-w-[28ch] text-base sm:text-lg text-gray-600 leading-relaxed">
+                We ensure your business is <strong>seen, visited, and remembered.</strong>
+              </p>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 lg:text-5xl">Prime Location</h3>
-            <p className="text-gray-600 leading-relaxed md:text-xl lg:text-2xl">
-              We ensure your business is <strong>seen, visited, and remembered.</strong>
-            </p>
-          </div>
-          <div className=" m-6 h-75 md:h-100 md:w-4xl bg-white border border-gray-200 rounded-xl p-10 text-center shadow-sm">
-            <div className="flex justify-center mb-6 text-indigo-900">
-              <img src={Partner} className="w-13 lg:w-20" alt="" />
+
+            <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 text-center shadow-sm">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center">
+                <img src={Partner} className="h-14 w-14 object-contain" alt="Partnerships" />
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900`">Partnerships</h3>
+              <p className="mx-auto mt-4 max-w-[28ch] text-base sm:text-lg text-gray-600 leading-relaxed">
+                We take pride in building <strong className="whitespace-nowrap">long-term relationships</strong> <br />
+                based on integrity, transparency, and mutual success.
+              </p>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 lg:text-5xl">Partnerships</h3>
-            <p className="text-gray-600 leading-relaxed md:text-xl lg:text-2xl">
-              We take pride in building{" "}
-              <span className="whitespace-nowrap">
-                <strong>long-term relationships</strong>
-              </span>
-              <br />
-              based on integrity, transparency, and mutual success.
-            </p>
           </div>
         </div>
       </section>
