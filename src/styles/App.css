@@ -21,7 +21,6 @@
   z-index: 1;
 }
 
-
 @media (min-width: 768px) {
   .background-image1 {
     background-image: url("../assets/images/drone-jnf.jpg");
@@ -46,4 +45,8 @@
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 9px;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
 }

@@ -18,7 +18,11 @@ export default function Contact() {
         <p className="mt-2 text-lg/8 text-gray-600">We provide spaces for you to grow your business</p>
       </div>
 
-      <form action="c67ce7757c03cf0bd42019a8cdd86e5a" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form
+        action="https://formsubmit.co/c67ce7757c03cf0bd42019a8cdd86e5a"
+        method="POST"
+        className="mx-auto mt-16 max-w-xl sm:mt-20"
+      >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="sm:col-span-2">
             <label htmlFor="first-name" className="block text-sm/6 font-semibold text-gray-900">

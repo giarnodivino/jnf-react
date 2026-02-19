@@ -12,16 +12,16 @@ function App() {
       <Navbar />
 
       {/* WELCOME SECTION */}
-      <section className="relative h-[85vh] w-full overflow-hidden pt-20 md:mt-15" id="home">
+      <section className="relative h-[85vh] w-full overflow-hidden pt-20 md:mt-18" id="home">
         <div className="background-image1" />
         <div
           className="relative z-3 h-full flex flex-col pt-18.75
          text-white text-center"
         >
-          <h1 className="text-5xl font-extrabold font-sans object-top md:text-6xl lg:text-8xl max-w-5xl mx-auto">
+          <h1 className="text-5xl font-extrabold  object-top md:text-6xl lg:text-8xl max-w-5xl mx-auto">
             Commercial Property for Lease
           </h1>
-          <h2 className="text-lg max-w-3xl mx-auto font-medium font-sans desc1 p-4 m-2 md:text-2xl">
+          <h2 className="text-lg max-w-3xl mx-auto font-medium desc1 p-4 m-2 md:text-2xl">
             J&F Divino Corporation offers 3786 square meters of commercial space for lease in a prime location in Cubao,
             Quezon City
           </h2>
@@ -42,24 +42,24 @@ function App() {
         <div className="mx-auto max-w-7xl md:grid md:grid-cols-10 md:gap-8 mt-8">
           {/* ABOUT US */}
           <div className="md:col-span-4">
-            <h1 className="pt-4 px-8 text-4xl font-extrabold font-sans md:text-5xl lg:text-6xl">ABOUT US</h1>
+            <h1 className="pt-4 px-8 text-4xl font-extrabold  md:text-5xl lg:text-6xl">ABOUT US</h1>
 
-            <p className="p-8 text-lg font-light font-sans md:text-xl">
+            <p className="p-8 text-lg font-light  md:text-xl">
               J&F Divino Development Corporation is a family-owned company founded by Jacobo "Oboy" Divino Sr. and
               Felicidad "Idad" Divino.
             </p>
 
-            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl">
+            <p className="px-8 pb-8 text-lg font-light  md:text-xl">
               What began as a two-story residence with a small bakery gradually evolved into apartment units at the rear
               of the property.
             </p>
 
-            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl">
+            <p className="px-8 pb-8 text-lg font-light  md:text-xl">
               Over the decades, the company helped shape Cubao through well-planned mid-sized residential buildings in
               accessible, strategic locations.
             </p>
 
-            <p className="px-8 pb-8 text-lg font-light font-sans md:text-xl">
+            <p className="px-8 pb-8 text-lg font-light  md:text-xl">
               Today, it owns and manages two commercial buildings along Aurora Boulevard, near Anonas MRT-3 and the
               future Metro Manila Subway, serving retail, dining, clinics, and BPO tenants.
             </p>
@@ -84,7 +84,7 @@ function App() {
 
       {/* WHY CHOOSE US SECTION */}
       <section className="relative mx-auto">
-        <h1 className="text-4xl font-extrabold text-center p-10 font-sans from-gray-200 to-white bg-linear-to-b md:text-5xl">
+        <h1 className="text-4xl font-extrabold text-center p-10  from-gray-200 to-white bg-linear-to-b md:text-5xl">
           WHY CHOOSE US
         </h1>
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -128,12 +128,29 @@ function App() {
 
       {/* CONTACT US SECTION */}
       <section className="relative mx-auto mb-10" id="contactus">
-        <Contact />
+        <div className="lg:grid lg:grid-cols-2 items-center">
+          <div className="col-span-1">
+            <Contact />
+          </div>
+          <div className="col-span-1 ">
+            {/* contact info cards */}
+            <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 text-center shadow-sm m-10">
+              <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Contact Information</h3>
+              <p className="mx-auto mt-4 max-w-[28ch] text-base sm:text-lg text-gray-600 leading-relaxed">
+                For inquiries, please contact us at:
+                <br />
+                <strong>Phone:</strong> +63 917 507 337
+                <br />
+                <strong>Email:</strong> info@jnfdivino.com
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* MAP SECTION */}
       <section className="mx-auto max-w-7xl px-4 py-12">
-        <h1 className="text-4xl font-sans font-bold pl-1 pb-5 mb-8 text-center md:text-left">Locations</h1>
+        <h1 className="text-4xl  font-bold pl-1 pb-5 mb-8 text-center md:text-left">Locations</h1>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <MapCard
             title="J&F Divino Arcade"
