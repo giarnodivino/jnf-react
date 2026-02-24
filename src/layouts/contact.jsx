@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-white px-6 sm:py-32 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -13,7 +13,6 @@ export default function Contact() {
           className="relative left-1/2 -z-10 aspect-1155/678 w-144.5 max-w-none -translate-x-1/2 rotate-30 bg-linear-to-tr from-indigo-500 to-teal-200 opacity-30 sm:left-[calc(50%-40rem)] sm:w-288.75"
         />
       </div>
-      
 
       <form
         action="https://formsubmit.co/c67ce7757c03cf0bd42019a8cdd86e5a"

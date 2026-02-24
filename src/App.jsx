@@ -127,30 +127,35 @@ function App() {
       </section>
 
       {/* CONTACT US SECTION */}
-      <section className="relative mx-auto mb-10" id="contactus">
-        <div className="lg:grid lg:grid-cols-2 items-center mt-15">
-          <div className="col-span-1 ">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
-                Inquire Now
-              </h2>
-              <p className="mt-2 text-lg/8 text-gray-600">We provide spaces for you to grow your business</p>
-            </div>
-            {/* contact info cards */}
-            <div className="rounded-xl border border-gray-200 bg-white p-6 sm:p-8 text-center shadow-sm m-10">
-              <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Contact Information</h3>
-              <p className="mx-auto mt-4 max-w-[28ch] text-base sm:text-lg text-gray-600 leading-relaxed">
-                For inquiries, please contact us at:
-                <br />
-                <strong>Phone:</strong> +63 917 507 337
-                <br />
-                <strong>Email:</strong> info@jnfdivino.com
-              </p>
-            </div>
+      <section className="relative mx-auto max-w-6xl p-4" id="contactus">
+        <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl text-center p-5 mt-10">
+          INQUIRE NOW
+        </h2>
+
+        <p className="text-lg text-gray-600 text-center">We provide spaces for you to grow your business</p>
+
+        <div className="grid gap-8 md:grid-cols-2 mt-10">
+          {/* Address Card */}
+          <div className="h-full rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
+            <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center">Address</h3>
+            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed text-center">
+              J&F Divino Arcade, 961 Aurora Boulevard, Cubao, Quezon City
+            </p>
           </div>
-          <div className="col-span-1">
-            <Contact />
+
+          {/* Contact Card */}
+          <div className="h-full rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
+            <h3 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center">Contact Information</h3>
+            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed text-center">
+              <strong>Phone:</strong> +63 917 123 4567
+              <br />
+              <strong>Email:</strong> info@jnfdivino.com
+            </p>
           </div>
+        </div>
+
+        <div className="">
+          <Contact />
         </div>
       </section>
 
