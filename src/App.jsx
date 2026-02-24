@@ -127,7 +127,7 @@ function App() {
       </section>
 
       {/* CONTACT US SECTION */}
-      <section className="relative mx-auto max-w-6xl p-4" id="contactus">
+      <section className="relative mx-auto max-w-6xl p-4 mt-15" id="contactus">
         <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl text-center p-5 mt-10">
           INQUIRE NOW
         </h2>
